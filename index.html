@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Viducation — Educational videos</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #29251f; background: #f6f2e9; }
+    body { max-width: 72rem; margin: auto; padding: 3rem 1.25rem; }
+    h1 { margin-bottom: .5rem; } header p { margin-bottom: 2.5rem; }
+    .videos { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,28rem),1fr)); gap: 2rem; }
+    article { background: #fffdf8; border: 1px solid #d9d0bf; border-radius: 1rem; overflow: hidden; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #29251f; }
+    .details { padding: 1.5rem; } h2 { margin-top: 0; } a { color: #31553e; }
+  </style>
+</head>
+<body>
+  <header><h1>Viducation</h1><p>Learn something new, one video at a time.</p></header>
+  <main class="videos" aria-label="Educational videos">
+    <article>
+      <video controls playsinline preload="metadata" poster="explainers/dental-bridge/preview-10.png" aria-label="How a dental technician makes a bridge">
+        <source src="explainers/dental-bridge/dental-bridge.mp4" type="video/mp4">
+        <a href="explainers/dental-bridge/dental-bridge.mp4">Download the video</a>
+      </video>
+      <div class="details">
+        <h2>How a dental technician makes a bridge</h2>
+        <p>A 30-second illustrated look at designing, milling, finishing and fitting a dental bridge.</p>
+        <a href="explainers/dental-bridge/dental-bridge.html">Explore the interactive animation</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
